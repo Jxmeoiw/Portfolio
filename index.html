@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/40e9e65e79.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="assets/images/Logo.png" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#training">Training</a></li>
+                    <li><a href="#myProject">Projects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Welcome!</p>
+                <h1>
+                    Hi, I'm <span>James Joseph Inoc</span><br>
+                    a student at the Center for <br>
+                    Industrial Technology and Enterprise
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------About----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/Self.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My name is James Joseph Montes Inoc, and I am currently a student at the 
+                        Center for Industrial Technology and Enterprise, pursuing a degree in Computer Engineering. 
+                        I'm passionate about technology and eager to apply my skills to real-world challenges.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Basic Computer Troubleshooting</span><br>
+                                Able to diagnose and resolve common hardware, software, and peripheral issues in Windows-based systems.
+                            </li>
+                            <li>
+                                <span>Power Apps Developer (Low Code)</span><br>
+                                Skilled in building business applications using Microsoft Power Apps,
+                                leveraging low-code solutions to streamline workflows and enhance productivity.
+                            </li>
+                            <li>
+                                <span>Basic Cisco Networking</span><br>
+                                Familiar with fundamental networking concepts including IP addressing, subnetting, and configuration of Cisco routers and switches.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Low-Code Programming</span><br>
+                                Trained in Mendix, Power Apps, Power BI, and SharePoint, focusing on building apps, automating workflows, 
+                                and creating data visualizations with minimal coding.
+                            </li>
+                            <li>
+                                <span>Current Internship</span><br>
+                                Interning as a Power Apps Developer at Alliance, gaining practical experience in 
+                                app development and workflow automation.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>College</span><br>
+                                Center for Industrial Technology and Enterprice<br>
+                                Purok II San Jose, Cebu City, Philippines<br>
+                                Diploma in Computer Engineering<br>
+                                2023 - Current
+                            </li>
+                            <li>
+                                <span>Senior High School</span><br>
+                                University of Cebu Lapu-Lapu and Mandaue Campus<br>
+                                A.C. Cortes Avenue, Barangay Looc, Mandaue City, 6014, Cebu, Philippines<br>
+                                STEM Strand<br>
+                                2021 - 2023
+                            </li>
+                            <li>
+                                <span>Elementary School and Junior High School</span><br>
+                                Tolo-tolo, Elementary School<br>
+                                2011 - 2017<br><br>
+                                Tolo-tolo National High School<br>
+                                2017 - 2021<br>
+                                9WQR+PVC, Consolacion, Cebu
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------Training-------------------------------->
+    <div id="training">
+        <div class="container">
+            <div class="row">
+                <div class="training-col-1">
+                    <h1 class="sub-title">Training</h1>
+                    <p>
+                        <span class="highlight">Alliance Software Inc. Hosts Low-Code Programming</span><br><br>
+                        The program, which ran from August 31 to December 20, 2024, 
+                        provided participants with essential software development skills tailored to the rapidly growing Low-Code platform industry. 
+                        The training was led by a team of expert facilitators, including John Laurence Gamas, Keziah Reve Rodriguez, Allen Lawrence Bolaños, and Jhessa Mae Uy, 
+                        who ensured participants gained practical, hands-on knowledge.
+                    </p>
+                </div>
+                <div class="training-col-2">
+                    <img src="assets/images/lowcode.jpg" alt="Low-Code Training">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------Projects------------------------------------------------------->
+    <div id="myProject">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="assets/images/NewYear.jpg">
+                    <div class="layer">
+                        <h3>New Year Countdown</h3>
+                        <p>
+                            This project features a live countdown displaying the remaining days, hours, minutes, and seconds until the New Year. 
+                            It's a simple and engaging way to track the approach of midnight.
+                        </p>
+                        <a href="assets/projects/Newyear.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/AgeCalcu.jpg">
+                    <div class="layer">
+                        <h3>Age Calculator</h3>
+                        <p>
+                            This is a simple tool that calculates a person's age in years based on their date of birth. 
+                            Users enter their birthdate, and the calculator instantly displays their current age.
+                        </p>
+                        <a href="assets/projects/AgeCalcu.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/images/BMI.jpg">
+                    <div class="layer">
+                        <h3>BMI Calculator</h3>
+                        <p>
+                            This project is a simple tool that calculates Body Mass Index (BMI) based on a user's height and weight. 
+                            It helps users determine whether they are underweight, normal, overweight, or obese according to standard BMI categories.
+                        </p>
+                        <a href="assets/projects/BMI.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------------------Contact Us------------------------------------------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> jaymeznox@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 09997479053</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Jwymesesez"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/jxmeoiw/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="assets/CV/James Joseph Inoc_ Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="8a6d2213-4989-4c4a-b21d-150bbbc6cf6f">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn subtn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright © James Joseph Inoc</p>
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
